@@ -3,113 +3,59 @@
 
 <head>
     <meta charset = "UTF-8" />
-    <link rel = "stylesheet" href="style.css">
+    <link rel = "stylesheet" href="./assets/CSS/style.css">
     <title>Coding Quiz Challenge</title>
 </head>
 
 <body>
-    <div class="homepage"> <!--First page, to begin quiz-->
+    <!--First page, to begin quiz
+
+        <div id="homepage" class="layout"> 
         <h1 class="header">
             Coding Quiz Challenge
         </h1>
-        <h3>
+        <h3 class = "text">
             Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </h3>
-        <p class="button">
+        <button id="start" type="submit">
             Start Quiz
-        </p>
-    </div>
+        </button>
+    </div> -->
 
     <!--Questions and answers for question 1 of the quiz-->
-    <div class="question"> 
-        <h2>
-            Commonly used data types DO NOT include:
-        </h2>
-        <div>
-            <button class="button">1. strings</button>
-            <button class="button">2. booleans</button>
-            <button class="button">3. alerts</button>
-            <button class="button">4. numbers</button>
-        </div>
+    <div class="questionsContainer">
+        <h2 class="question"></h2>
+        <ul class="answers"></ul>
     </div>
+    
 
-    <!--Questions and answers for question 2 of the quiz-->
-    <div class="question">
-        <h2>
-            The condition in an if / else statement is enclosed within __________.
-        </h2>
-        <div>
-            <button class="button">1. quotes</button>
-            <button class="button">2. curly brackets</button>
-            <button class="button">3. parentheses</button>
-            <button class="button">4. square brackets</button>
-        </div>
-    </div>
+    <!--Score page 
 
-    <!--Questions and answers for question 3 of the quiz-->
-    <div class="question">
-        <h2>
-            Arrays in JavaScript can be used to store __________.
-        </h2>
-        <div>
-            <button class="button">1. numbers and strings</button>
-            <button class="button">2. other arrays</button>
-            <button class="button">3. booleans</button>
-            <button class="button">4. all of the above</button>
-        </div>
-    </div>
-
-    <!--Questions and answers for question 4 of the quiz-->
-    <div class="question">
-        <h2>
-            String values must be enclosed within ______ when being assigned to variables.
-        </h2>
-        <div>
-            <button class="button">1. commas</button>
-            <button class="button">2. curly brackets</button>
-            <button class="button">3. quotes</button>
-            <button class="button">4. parentheses</button>
-        </div>
-    </div>
-
-    <!--Questions and answers for question 5 of the quiz-->
-    <div class="question">
-        <h2>
-            A very useful tool used during development and debugging for printing content to the debugger is:
-        </h2>
-        <div>
-            <button class="button">1. JavaScript</button>
-            <button class="button">2. terminal/bash</button>
-            <button class="button">3. for loops</button>
-            <button class="button">4. console.log</button>
-        </div>
-    </div>
-
-    <div> <!--Score page--> 
+        <div class ="layout" id="scorepage">  
         <h2>
             All done!
         </h2>
         <h3>
-            Your final score is
+            Your final score is <span id="score">0</span>
         </h3>
         <p>
             <button class="button">Enter intials</button>
         </p>
-        <p > <!--submit button-->
+        <p > 
             <button class="button">Submit</button>
         </p>
-    </div>
+    </div> -->
 
-    <div> <!--Headers at the top of the page in separate corners-->
-        <h3 id="topleft">
+    <!-- <div> Headers at the top of the page in separate corners
+        <h3 id="highscore" class="top">
             View Highscores
         </h3>
-        <h3 id="timer"> <!--countdown timer-->
-            Time:
+        <h3 id="timer" class="top">
+            Time:<span id="clock"> 75</span>
         </h3>
-    </div>
-
-    <div> <!--ighscores page-->
+    </div> -->
+<!-- 
+    <div id="highscorepage" class = "layout"> 
         <p>
             <button class="button">Highscores</button>
         </p>
@@ -119,19 +65,10 @@
         <p>
             <button class="button">Clear Highscores</button>
         </p>
-    </div>
-
-    <div>
-        <h4 id="correct"> <!--if the selected answer is correct-->
-            Correct!
-        </h4>
-        <h4 id="wrong"> <!--if the selected answer is wrong-->
-            Wrong!
-        </h4>
-    </div>
+    </div> -->
 
     
-    <script src="script.js"></script> <!--JavaScript file-->
+    <script src="./assets/Javascript/script.js"></script> <!--JavaScript file-->
 </body>
 
-</html>
+</html> 
